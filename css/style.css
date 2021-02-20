@@ -46,10 +46,6 @@ a {
 	color: black;
 }
 
-.block-greeting {
-	background-color: #40E0D0;
-}
-
 .site-navigation {
 	list-style: none;
 }
@@ -62,6 +58,10 @@ a {
 .site-navigation a {
 	color: black;
 	font-weight: bold;
+}
+
+.shape-svg {
+	transform: translateX(-227px) translateY(451px) scale(1.61, 1.7);
 }
 
 .number-features h3 {
@@ -179,10 +179,6 @@ form .label-appointment {
     font-weight: bold;
 }
 
-.social-networks {
-	list-style: none;
-}
-
 .input-appointment,
 .button-minus,
 .button-plus {
@@ -218,6 +214,14 @@ form .label-appointment {
 .button-minus:active {
 	color: #81B3D2;
 }
+
+.social-link {
+	height: 48;
+    width: 46;
+    background-color: #81B3D2;
+}
+
+
 
 
 /*Catalog*/
@@ -429,24 +433,14 @@ form .label-appointment {
 	grid-template-columns: 1fr 1fr 1fr;
 	margin: 0 auto;
 	width: 1200px;
-}
-
-.social-networks {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	margin: 0 auto;
-}
-
-.social-item {
-	display: grid;
-	grid-template-columns: 1fr;
-	margin: 0 auto;
+	outline: 2px solid #00FF00;
 }
 
 .developed-block {
 	display: grid;
 	grid-template-columns: 1fr;
 	margin: 0 auto;
+	outline: 2px solid #00FF00;
 }
 
 .developed-button {
@@ -459,6 +453,7 @@ form .label-appointment {
 	display: grid;
 	grid-template-columns: 1fr;
 	margin: 0 auto;
+	outline: 2px solid #00FF00;
 }
 
 
@@ -525,7 +520,10 @@ form .label-appointment {
 
 .block-greeting {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	background: #40E0D0 url("../img/background-photo.png");
+	padding-bottom: 159px;
 }
 
 .about-sedona {
@@ -579,6 +577,22 @@ form .label-appointment {
 	flex-direction: column;
 	align-items: center;
 }
+
+.social-networks {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	outline: 2px solid #00FF00;
+}
+
+.social-item {
+	margin: 0 auto;
+	outline: 2px solid #00FF00;
+}
+
+
 
 
 
@@ -646,16 +660,13 @@ form .label-appointment {
 	margin-right: 0;
 }
 
-.description-hotels {
-}
-
 .title-motel {
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-left: 25px;
 }
 
 .paragraph-house {
-	margin-bottom: 30px;
+	margin-top: 0;
 	margin-left: 25px;
 }
 
