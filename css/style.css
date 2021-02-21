@@ -46,6 +46,10 @@ a {
 	color: black;
 }
 
+.logo-link {
+	position: absolute;
+}
+
 .site-navigation {
 	list-style: none;
 }
@@ -60,10 +64,6 @@ a {
 	font-weight: bold;
 }
 
-.shape-svg {
-	transform: translateX(-227px) translateY(451px) scale(1.61, 1.7);
-}
-
 .number-features h3 {
 	font-size: 21px;
     line-height: 26px;
@@ -74,6 +74,11 @@ a {
 	font-size: 14px;
     line-height: 26px;
     font-weight: normal;
+}
+
+.features {
+	padding-top: 60px;
+	padding-bottom: 80px;
 }
 
 .features-list,
@@ -150,12 +155,22 @@ a {
     font-weight: 400;
 }
 
+.appointment-form {
+	position: absolute;
+	bottom: -1691px;
+	background-color: white;
+	padding: 91px;
+}
+
 .appointment h3 {
+	position: relative;
+	top: 21px;
 	font-size: 21px;
     line-height: 26px;
     background-color: #766357;
     color: white;
     font-weight: bold;
+    padding: 30px 125px;
 }
 
 .hotel-search:hover {
@@ -215,11 +230,6 @@ form .label-appointment {
 	color: #81B3D2;
 }
 
-.social-link {
-	height: 48;
-    width: 46;
-    background-color: #81B3D2;
-}
 
 
 
@@ -433,20 +443,6 @@ form .label-appointment {
 	grid-template-columns: 1fr 1fr 1fr;
 	margin: 0 auto;
 	width: 1200px;
-	outline: 2px solid #00FF00;
-}
-
-.developed-block {
-	display: grid;
-	grid-template-columns: 1fr;
-	margin: 0 auto;
-	outline: 2px solid #00FF00;
-}
-
-.developed-button {
-	display: grid;
-	grid-template-columns: 1fr;
-	margin: 0 auto;
 }
 
 .footer-contacts {
@@ -455,6 +451,20 @@ form .label-appointment {
 	margin: 0 auto;
 	outline: 2px solid #00FF00;
 }
+
+.developed-block {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 0 auto;
+	padding: 0;
+	outline: 2px solid #00FF00;
+}
+
+.developed-button {
+	margin: 0;
+}
+
+
 
 
 /*Grid Catalog*/
@@ -520,10 +530,16 @@ form .label-appointment {
 
 .block-greeting {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
-	background: #40E0D0 url("../img/background-photo.png");
+	align-items: center;
+	background: #40E0D0 url("../img/background-photo.png") no-repeat;
 	padding-bottom: 159px;
+}
+
+.shape-svg {
+	position: absolute;
+	bottom: 207px;
 }
 
 .about-sedona {
@@ -584,12 +600,14 @@ form .label-appointment {
 	justify-content: center;
 	align-items: center;
 	list-style: none;
-	outline: 2px solid #00FF00;
+	/*outline: 2px solid #00FF00;*/
 }
 
-.social-item {
-	margin: 0 auto;
-	outline: 2px solid #00FF00;
+
+.social-link {
+	padding: 8px 12px;
+    background-color: #81B3D2;
+    margin: 3px;
 }
 
 
