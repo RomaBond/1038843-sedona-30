@@ -48,6 +48,8 @@ a {
 
 .logo-link {
 	position: absolute;
+	top: 10px;
+	z-index: 1;
 }
 
 .site-navigation {
@@ -62,6 +64,16 @@ a {
 .site-navigation a {
 	color: black;
 	font-weight: bold;
+}
+
+.item-second {
+	position: relative;
+	right: 70px;
+}
+
+.item-third {
+	position: relative;
+	left: 60px;
 }
 
 .number-features h3 {
@@ -157,9 +169,9 @@ a {
 
 .appointment-form {
 	position: absolute;
-	bottom: -1691px;
+	bottom: -1915px;
 	background-color: white;
-	padding: 91px;
+	padding-top: 30px;
 }
 
 .appointment h3 {
@@ -170,7 +182,11 @@ a {
     background-color: #766357;
     color: white;
     font-weight: bold;
-    padding: 30px 125px;
+    padding: 30px 133px;
+}
+
+.appointment-item {
+	margin: 30px;
 }
 
 .hotel-search:hover {
@@ -192,6 +208,14 @@ form .label-appointment {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+}
+
+.submit-search {
+	border: none;
+	background-color: #81B3D2;
+	color: white;
+	padding: 16px 203px;
+	margin: 55px;
 }
 
 .input-appointment,
@@ -243,11 +267,10 @@ form .label-appointment {
 }
 
 .form-choice,
-.min-cost,
-.max-cost,
+.minmax-cost,
 .submit-cost {
 	color: #FFFFFF;
-	background-color: #5F9EA0;
+	background-color: rgba(135, 206, 235);
 }
 
 .form-choice {
@@ -259,7 +282,6 @@ form .label-appointment {
 	border: none;
 }
 
-.legend-infrastructure-type,
 .legend-comfort-type,
 .legend-cost {
 	font-size: 16px;
@@ -267,18 +289,25 @@ form .label-appointment {
 }
 
 .label-choice,
-.min-cost,
-.max-cost,
+.minmax-cost,
 .submit-cost {
 	font-size: 14px;
     line-height: 21px;
     font-weight: 400;
 }
 
-.min-cost,
-.max-cost,
 .submit-cost {
 	border: 2px solid #FFFFFF;
+	border-radius: 5px;
+}
+
+.minmax-cost {
+	border: none;
+	text-align: center;
+}
+
+.minmax-cost::placeholder {
+	color: white;
 }
 
 .submit-cost:hover {
@@ -287,17 +316,45 @@ form .label-appointment {
     color: #000000;
 }
 
-.found-hotels {
-	font-size: 21px;
-    line-height: 26px;
-}
-
 .input-choice {
 	background-color: #FFFFFF;
+	display: none;
+}
+
+.input-choice + label::before {
+	content: "";
+	position: absolute;
+	left: -40px;
+	width: 23px;
+	height: 23px;
+	border: 2px solid white;
+	border-radius: 5px;
+}
+
+.input-choice:checked + label::after {
+	content: "";
+	position: absolute;
+	left: -36px;
+	top: -1px;
+	width: 18px;
+	height: 18px;
+	background-image: url("../img/shape-mode.svg");
+	background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 21px 16px;
 }
 
 .input-choice:active {
 	background-color: #6A6A6A;
+}
+
+.label-choice {
+	position: relative;
+}
+
+.found-hotels {
+	font-size: 21px;
+    line-height: 26px;
 }
 
 .sorting {
@@ -355,6 +412,11 @@ form .label-appointment {
 .item-by-type,
 .item-by-rating {
 	border-bottom: 1px dashed #81B3D2;
+}
+
+.button-sorting {
+	border: none;
+	background-color: #FFFFFF;
 }
 
 .title-motel {
@@ -510,14 +572,14 @@ form .label-appointment {
 
 
 
-
+/*header*/
 .main-navigation {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 1200px;
 	margin: auto;
-	
+	position: relative;
 }
 
 .site-navigation {
@@ -528,24 +590,30 @@ form .label-appointment {
 	width: 100%;
 }
 
+/*main*/
 .block-greeting {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;
-	background: #40E0D0 url("../img/background-photo.png") no-repeat;
-	padding-bottom: 159px;
+	position: relative;
+	background: #81B3D2 url("../img/background-photo.png") no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top: 75px;
+	padding-bottom: 75px;
 }
 
 .shape-svg {
 	position: absolute;
-	bottom: 207px;
+	bottom: 0;
 }
 
 .about-sedona {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-bottom: 40px;
+	padding-top: 30px;
 }
 
 .reasons-media {
@@ -588,6 +656,7 @@ form .label-appointment {
 	align-items: center;
 }
 
+/*footer*/
 .appointment {
 	display: flex;
 	flex-direction: column;
@@ -623,23 +692,43 @@ form .label-appointment {
 	margin: auto;
 }
 
+.legend-comfort-type {
+	margin-left: 0;
+}
+
 .block-choice {
-	margin-top: 15px;
+	margin-top: 20px;
+	margin-left: 30px;
 }
 
 .fieldset-cost {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
-	justify-content: center;
+	align-items: center;
+	justify-content: flex-start;
 	margin-left: auto;
 	margin-right: 73px;
 	padding: 0;
 }
 
 .legend-cost {
-	padding-top: 30px;
+	padding-top: 20px;
+}
 
+.group-cost {
+	border: 2px solid #FFFFFF;
+    border-radius: 2px;
+	margin-top: 10px;
+	display: flex;
+	position: relative;
+}
+
+.range-cost {
+	margin-top: 15px;
+}
+
+.submit-cost {
+	margin-top: 20px;
 }
 
 .found-hotels {
