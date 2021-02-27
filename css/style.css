@@ -48,7 +48,7 @@ a {
 
 .logo-link {
 	position: absolute;
-	top: 10px;
+	
 	z-index: 1;
 }
 
@@ -82,10 +82,17 @@ a {
     font-weight: bold;
 }
 
+.about-sedona h3 {
+	padding: 0;
+	width: 45%;
+	text-align: center;
+}
+
 .about-sedona p {
 	font-size: 14px;
     line-height: 26px;
     font-weight: normal;
+    padding: 0;
 }
 
 .features {
@@ -108,24 +115,42 @@ a {
 	font-size: 14px;
     line-height: 21px;
     font-weight: normal;
+    padding: 0;
+    width: 70%;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .feature-block h3{
 	font-size: 21px;
     line-height: 21px;
     font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+}
+
+.feature-block .evel-bridge {
+	width: 50%;
 }
 
 .feature-block span {
 	font-size: 14px;
     line-height: 21px;
     font-weight: normal;
+    padding: 0;
+    margin-top: 20px;
 }
 
 .feature-block p {
 	font-size: 14px;
     line-height: 21px;
     font-weight: normal;
+    text-align: center;
+    width: 110%;
+    padding: 0;
+    margin-top: 20px;
 }
 
 .feature-block {
@@ -141,18 +166,26 @@ a {
 	font-size: 21px;
     line-height: 21px;
     font-weight: bold;
+    margin-top: 0;
+    width: 40%;
+    text-align: center;
 }
 
 .next-item span {
 	font-size: 14px;
     line-height: 21px;
     font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .next-item p {
 	font-size: 14px;
     line-height: 21px;
     font-weight: normal;
+    margin-top: 10px;
+    width: 70%;
+    text-align: center;
 }
 
 .invitation h3 {
@@ -165,28 +198,21 @@ a {
 	font-size: 14px;
     line-height: 24px;
     font-weight: 400;
-}
-
-.appointment-form {
-	position: absolute;
-	bottom: -1915px;
-	background-color: white;
-	padding-top: 30px;
+    width: 35%;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .appointment h3 {
-	position: relative;
-	top: 21px;
 	font-size: 21px;
     line-height: 26px;
     background-color: #766357;
     color: white;
     font-weight: bold;
-    padding: 30px 133px;
 }
 
-.appointment-item {
-	margin: 30px;
+.appointment-form {
+	background-color: white;
 }
 
 .hotel-search:hover {
@@ -200,12 +226,6 @@ a {
 
 form .label-appointment {
 	font-size: 14px;
-    line-height: 26px;
-    font-weight: bold;
-}
-
-.footer-contacts p {
-    font-size: 21px;
     line-height: 26px;
     font-weight: bold;
 }
@@ -252,6 +272,16 @@ form .label-appointment {
 
 .button-minus:active {
 	color: #81B3D2;
+}
+
+.footer-contacts p {
+    line-height: 26px;
+}
+
+.developed-block span {
+	font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
 }
 
 
@@ -504,27 +534,32 @@ form .label-appointment {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	margin: 0 auto;
+	padding: 0;
 	width: 1200px;
+	outline: 2px solid #00FF00;
 }
 
 .footer-contacts {
 	display: grid;
 	grid-template-columns: 1fr;
 	margin: 0 auto;
-	outline: 2px solid #00FF00;
-}
-
-.developed-block {
-	display: grid;
-	grid-template-columns: 1fr;
-	margin: 0 auto;
 	padding: 0;
-	outline: 2px solid #00FF00;
 }
 
-.developed-button {
-	margin: 0;
+.footer-contacts p {
+	text-align: center;
 }
+
+.contacts a {
+	margin-bottom: 8px;
+}
+
+.footer-social {
+	outline: 2px solid #00FF00;
+	padding: 0;
+	margin: auto;
+}
+
 
 
 
@@ -573,6 +608,7 @@ form .label-appointment {
 
 
 /*header*/
+
 .main-navigation {
 	display: flex;
 	flex-direction: column;
@@ -586,6 +622,8 @@ form .label-appointment {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	padding: 0;
 	width: 100%;
 }
@@ -621,6 +659,14 @@ form .label-appointment {
 	margin: auto;
 }
 
+.feature-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 45px 52px;
+}
+
 .features-list {
 	display: flex;
 }
@@ -631,47 +677,129 @@ form .label-appointment {
 	align-items: center;
 }
 
-.feature-block {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.next-features {
+	padding: 0;
 }
 
 .next-list {
 	display: flex;
-	margin-top: 0;
-	height: 256px;
+	margin: 0;
 }
 
 .next-item {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
-	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 0;
 }
 
 .invitation {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-top: 40px;
 }
 
-/*footer*/
 .appointment {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
+.appointment h3 {
+	position: relative;
+	top: 21px;
+	padding: 30px 133px;
+}
+
+.appointment-form {
+	position: absolute;
+	bottom: -1912px;
+	padding: 0;
+}
+
+.appointment-item {
+	margin: 30px;
+	padding: 0;
+	width: 460px;
+	/*outline: 2px solid #00FF00;*/
+}
+
+.appointment-item:nth-child(1) {
+	margin: 55px 55px 30px 55px;
+	padding-right: 0;
+}
+
+.appointment-item:nth-child(2) {
+	margin: 30px 55px;
+}
+
+.appointment-item:nth-child(3) {
+	display: flex;
+	margin: 30px 55px 0 55px;
+}
+
+.appointment-item:nth-child(1) label {
+	padding: 0;
+	margin-right: 15px;
+}
+
+.appointment-item:nth-child(2) label {
+	padding: 0;
+	margin-right: 12px;
+}
+
+.appointment-item:nth-child(1) input {
+	width: 346px;
+	height: 38px;
+}
+
+.appointment-item:nth-child(2) input {
+	width: 346px;
+	height: 38px;
+}
+
+.block-people label {
+	margin-right: 30px;
+}
+
+.block-people {
+	padding: 0;
+	/*outline: 2px solid #00FF00;*/
+}
+
+.block-people:nth-child(1) {
+	margin-right: 100px;
+}
+
+.block-people .button-plus {
+	margin-right: 0;
+}
+
+.button-plus,
+.button-minus {
+	height: 38px;
+	width: 20px;
+}
+
+.block-people .input-appointment {
+	width: 30px;
+	height: 38px;
+	text-align: center;
+}
+
+
+/*footer*/
 .social-networks {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	list-style: none;
-	/*outline: 2px solid #00FF00;*/
 }
-
 
 .social-link {
 	padding: 8px 12px;
@@ -679,6 +807,19 @@ form .label-appointment {
     margin: 3px;
 }
 
+.developed-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.developed-button {
+	margin: 0;
+}
+
+.website-by {
+	margin-right: 8px;
+}
 
 
 
