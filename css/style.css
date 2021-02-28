@@ -44,11 +44,11 @@ body {
 a {
 	text-decoration: none;
 	color: black;
+	cursor: pointer;
 }
 
 .logo-link {
 	position: absolute;
-	
 	z-index: 1;
 }
 
@@ -64,6 +64,15 @@ a {
 .site-navigation a {
 	color: black;
 	font-weight: bold;
+}
+
+.link-navigation-active:hover {
+	color: #81B3D2;
+}
+
+.link-navigation-active:active {
+	color: #000000;
+    opacity: 0.3;
 }
 
 .item-second {
@@ -236,6 +245,16 @@ form .label-appointment {
 	color: white;
 	padding: 16px 203px;
 	margin: 55px;
+	cursor: pointer;
+}
+
+.submit-search:hover {
+	background-color: #669EC0;
+}
+
+.submit-search:active {
+	background-color: #5496BD;
+	opacity: 0.3;
 }
 
 .input-appointment,
@@ -284,6 +303,26 @@ form .label-appointment {
     line-height: 26px;
 }
 
+.developed-button img:hover {
+	background-color: #81B3D2;
+}
+
+.developed-button img:active {
+	background-color: #BDBBBC;
+}
+
+.social-item:hover {
+	background-color: #669EC0;
+}
+
+.social-item:active {
+	background-color: #5496BD;
+}
+
+.social-link svg:active {
+	opacity: 0.3;
+}
+
 
 
 
@@ -312,6 +351,10 @@ form .label-appointment {
 	border: none;
 }
 
+.block-choice {
+	cursor: pointer;
+}
+
 .legend-comfort-type,
 .legend-cost {
 	font-size: 16px;
@@ -326,9 +369,14 @@ form .label-appointment {
     font-weight: 400;
 }
 
+.range-cost {
+	cursor: pointer;
+}
+
 .submit-cost {
 	border: 2px solid #FFFFFF;
 	border-radius: 5px;
+	cursor: pointer;
 }
 
 .minmax-cost {
@@ -401,6 +449,24 @@ form .label-appointment {
     border: none;
     text-transform: uppercase;
     background: #FFFFFF;
+    color: #000000;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.button-by-price:hover {
+	color: #81B3D2;
+	opacity: 1.0;
+}
+
+.button-by-price:active {
+	color: #000000;
+	opacity: 1.0;
+}
+
+.button-by-price:visited {
+	color: #81B3D2;
+	opacity: 1.0;
 }
 
 .button-by-type:hover {
@@ -413,6 +479,11 @@ form .label-appointment {
 	opacity: 1.0;
 }
 
+.button-by-type:visited {
+	color: #81B3D2;
+	opacity: 1.0; 
+}
+
 .button-by-rating:hover {
 	color: #81B3D2;
 	opacity: 1.0;
@@ -423,13 +494,9 @@ form .label-appointment {
 	opacity: 1.0;
 }
 
-.button-by-type,
-.button-by-rating {
-	opacity: 0.3;
-}
-
-.button-by-price {
+.button-by-rating:visited {
 	color: #81B3D2;
+	opacity: 1.0;
 }
 
 .item-by-price,
@@ -439,6 +506,7 @@ form .label-appointment {
 	list-style: none;
 }
 
+.item-by-price,
 .item-by-type,
 .item-by-rating {
 	border-bottom: 1px dashed #81B3D2;
@@ -447,6 +515,19 @@ form .label-appointment {
 .button-sorting {
 	border: none;
 	background-color: #FFFFFF;
+	cursor: pointer;
+}
+
+.button-sorting svg:hover {
+	background-color: #000000;
+}
+
+.button-sorting svg:active {
+	background-color: #81B3D2;
+}
+
+.button-sorting svg:visited {
+	background-color: #81B3D2;
 }
 
 .title-motel {
@@ -536,7 +617,6 @@ form .label-appointment {
 	margin: 0 auto;
 	padding: 0;
 	width: 1200px;
-	outline: 2px solid #00FF00;
 }
 
 .footer-contacts {
@@ -555,7 +635,6 @@ form .label-appointment {
 }
 
 .footer-social {
-	outline: 2px solid #00FF00;
 	padding: 0;
 	margin: auto;
 }
@@ -669,6 +748,8 @@ form .label-appointment {
 
 .features-list {
 	display: flex;
+	margin: 0;
+	padding: 0;
 }
 
 .feature-item {
@@ -683,7 +764,9 @@ form .label-appointment {
 
 .next-list {
 	display: flex;
+	justify-content: space-around;
 	margin: 0;
+	padding: 0;
 }
 
 .next-item {
@@ -707,6 +790,7 @@ form .label-appointment {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
 }
 
 .appointment h3 {
@@ -717,7 +801,7 @@ form .label-appointment {
 
 .appointment-form {
 	position: absolute;
-	bottom: -1912px;
+	top: 128px;
 	padding: 0;
 }
 
@@ -799,12 +883,18 @@ form .label-appointment {
 	justify-content: center;
 	align-items: center;
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-.social-link {
-	padding: 8px 12px;
-    background-color: #81B3D2;
-    margin: 3px;
+.social-item {
+	width: 46px;
+	height: 48px;
+	background-color: #81B3D2;
+	margin: 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .developed-block {
