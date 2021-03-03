@@ -107,7 +107,8 @@
         <p class="hotel-offers">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинниц в Седоне</p>
       </section>
       <section class="appointment">
-        <h3 class="hotel-search">Поиск гостинницы в Седоне</h3>
+        <h3 class="hidden">Поиск гостинницы в Седоне</h3>
+        <button class="hotel-search">Поиск гостинницы в Седоне</button>
       <form class="appointment-form" action="/" method="get">
         <div class="appointment-item">
             <label class="label-appointment" for="id-arrive">Дата заезда:</label> 
@@ -120,15 +121,19 @@
         <div class="appointment-item">
           <div class="block-people">
             <label class="label-appointment" for="id-adult">Взрослые:</label>
+            
             <input class="button-plus" type="button" value="+">
             <input class="input-appointment" type="text" name="name-adult" id="id-adult" value="2">
             <input class="button-minus" type="button" value="-">
+
           </div>
           <div class="block-people">
             <label class="label-appointment" for="id-children">Дети:</label>
+            
             <input class="button-plus" type="button" value="+">
             <input class="input-appointment" type="text" name="name-children" id="id-children" value="0">
             <input class="button-minus" type="button" value="-">
+            
           </div>
         </div>
             <input class="submit-search" type="submit" name="search" value="Найти">
@@ -177,7 +182,7 @@
   		<section class="developed-block">
   			<h3 class="hidden">Разработано</h3>
         <span class="website-by">Website by</span>
-  			<a class="developed-button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип подвала Седона"></a>
+  			<a class="developed-button" href="https://htmlacademy.ru"><div class="logo-footer"></div></a>
   		</section>
   	</footer>
 
