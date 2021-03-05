@@ -20,7 +20,7 @@
   				<li class="item-navigation"><a class="link-navigation" href="#">Информация</a></li>
   				<li class="item-navigation item-second"><a class="link-navigation" href="#">Фото и видео</a></li>
   				<li class="item-navigation item-third"><a class="link-navigation" href="#">Карта штата</a></li>
-  				<li class="item-navigation"><a class="link-catalog" href="catalog.html">Гостиницы</a></li>
+  				<li class="item-navigation"><a class="link-navigation" href="catalog.html">Гостиницы</a></li>
   			</ul>
   		</nav>
   	</header>
@@ -112,28 +112,24 @@
       <form class="appointment-form" action="/" method="get">
         <div class="appointment-item">
             <label class="label-appointment" for="id-arrive">Дата заезда:</label> 
-            <input class="input-appointment" type="date" name="name-arrive" id="id-arrive" value="24-04-2017">
+            <input class="input-appointment input-active" type="date" name="name-arrive" id="id-arrive" value="24-04-2017">
         </div>
         <div class="appointment-item">
             <label class="label-appointment" for="id-leaving">Дата выезда:</label>
-            <input class="input-appointment" type="date" name="name-leaving" id="id-leaving" value="04-07-2017">
+            <input class="input-appointment input-active" type="date" name="name-leaving" id="id-leaving" value="04-07-2017">
         </div>
         <div class="appointment-item">
           <div class="block-people">
             <label class="label-appointment" for="id-adult">Взрослые:</label>
-            
             <input class="button-plus" type="button" value="+">
             <input class="input-appointment" type="text" name="name-adult" id="id-adult" value="2">
             <input class="button-minus" type="button" value="-">
-
           </div>
           <div class="block-people">
             <label class="label-appointment" for="id-children">Дети:</label>
-            
             <input class="button-plus" type="button" value="+">
             <input class="input-appointment" type="text" name="name-children" id="id-children" value="0">
             <input class="button-minus" type="button" value="-">
-            
           </div>
         </div>
             <input class="submit-search" type="submit" name="search" value="Найти">

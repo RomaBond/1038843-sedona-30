@@ -66,11 +66,11 @@ a {
 	font-weight: bold;
 }
 
-.link-navigation-active:hover {
+.link-navigation:hover {
 	color: #81B3D2;
 }
 
-.link-navigation-active:active {
+.link-navigation:active {
 	color: #000000;
     opacity: 0.3;
 }
@@ -267,11 +267,40 @@ form .label-appointment {
 	border: none;
 }
 
-.input-appointment:hover {
-	background-color: #EBEBEB;
+.input-active::-webkit-calendar-picker-indicator {
+    opacity:0;
 }
 
-.input-appointment:focus {
+.input-active::after {
+	content: "";
+	background: url(../img/calendar.svg) no-repeat;
+	width: 21px;
+	height: 23px;
+	position: relative;
+}
+
+.input-active:hover::after {
+	content: "";
+	background: url(../img/calendar-hover.svg) no-repeat;
+    width: 21px;
+	height: 23px;
+	position: relative;
+}
+
+.input-active:active::after {
+	content: "";
+	background: url(../img/calendar-active.svg) no-repeat;
+	width: 21px;
+	height: 23px;
+	position: relative;
+	
+}
+
+.input-active:hover {
+	background-color: #EBEBEB;;
+}
+
+.input-active:focus {
 	background-color: #FFFFFF;
 }
 
@@ -878,11 +907,12 @@ form .label-appointment {
 .button-minus {
 	height: 38px;
 	width: 38px;
+	cursor: pointer;
 }
 
 .block-people .input-appointment {
 	width: 38px;
-	height: 38px;
+	height: 36px;
 	text-align: center;
 	font-size: 14px;
 	line-height: 26px;
