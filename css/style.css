@@ -277,6 +277,7 @@ form .label-appointment {
 	width: 21px;
 	height: 23px;
 	position: relative;
+	right: 8px;
 }
 
 .input-active:hover::after {
@@ -287,7 +288,7 @@ form .label-appointment {
 	position: relative;
 }
 
-.input-active:active::after {
+.input-active::after:active {
 	content: "";
 	background: url(../img/calendar-active.svg) no-repeat;
 	width: 21px;
@@ -803,6 +804,7 @@ form .label-appointment {
 
 .next-features {
 	padding: 0;
+	outline: 2px solid #00FF00;
 }
 
 .next-list {
@@ -810,6 +812,7 @@ form .label-appointment {
 	justify-content: space-around;
 	margin: 0;
 	padding: 0;
+	outline: 2px solid #00FF00;
 }
 
 .next-item {
@@ -820,6 +823,7 @@ form .label-appointment {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	padding: 0;
+	outline: 2px solid #00FF00;
 }
 
 .invitation {
