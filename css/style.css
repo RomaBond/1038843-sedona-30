@@ -39,6 +39,7 @@ body {
 	color: black;
 	text-transform: uppercase;
 	background-color: white;
+	position: relative;
 }
 
 a {
@@ -662,6 +663,10 @@ form .label-appointment {
 	margin: 0 auto;
 	padding: 0;
 	width: 1200px;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.9);
+	left: 168px;
+	bottom: 5px;
 }
 
 .footer-contacts {
