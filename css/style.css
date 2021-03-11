@@ -1,7 +1,6 @@
 @font-face {
 	font-family: "PT Sans";
-	src: local("PT Sans"),
-	     url("../fonts/PTSans-Bold.woff2") format("woff2"),
+	src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
 	     url("../fonts/PTSans-Bold.woff") format("woff");
 	font-weight: 700;   
 	font-style: normal;
@@ -9,8 +8,7 @@
 
 @font-face {
 	font-family: "PT Sans";
-	src: local("PT Sans"),
-	     url("../fonts/PTSans.woff2") format("woff2"),
+	src: url("../fonts/PTSans.woff2") format("woff2"),
 	     url("../fonts/PTSans.woff") format("woff");
 	font-weight: 400;    
 	font-style: normal;
@@ -381,15 +379,9 @@ form .label-appointment {
 	color: #766357;
 }
 
-.form-choice,
-.minmax-cost,
-.submit-cost {
-	color: #FFFFFF;
-	background-color: rgba(135, 206, 235);
-}
-
 .form-choice {
-	background: url("../img/background.png") no-repeat;
+	background: rgba(135, 206, 235) url("../img/background.png") no-repeat;
+	color: #FFFFFF;
 }
 
 .fieldset-comfort-type,
@@ -407,37 +399,8 @@ form .label-appointment {
     line-height: 21px;
 }
 
-.label-choice,
-.minmax-cost,
-.submit-cost {
-	font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-}
-
-.range-cost {
-	cursor: pointer;
-}
-
-.submit-cost {
-	border: 2px solid #FFFFFF;
-	border-radius: 5px;
-	cursor: pointer;
-}
-
-.minmax-cost {
-	border: none;
-	text-align: center;
-}
-
-.minmax-cost::placeholder {
-	color: white;
-}
-
-.submit-cost:hover {
-	background: #FFFFFF;
-    border: 2px solid #FFFFFF;
-    color: #000000;
+.label-choice {
+	position: relative;
 }
 
 .input-choice {
@@ -472,8 +435,79 @@ form .label-appointment {
 	background-color: #6A6A6A;
 }
 
-.label-choice {
+.label-choice,
+.minmax-cost,
+.submit-cost {
+	font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.minmax-cost {
+	color: #FFFFFF;
+	background-color: rgba(135, 206, 235, 0.0);
+	border: none;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.minmax-cost::placeholder {
+	color: white;
+}
+
+.range-controls {
+	padding-top: 25px;
+	padding-bottom: 15px;
 	position: relative;
+}
+
+.range-controls .scale {
+	width: 316px;
+	height: 2px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+	height: 2px;
+	background: #FFFFFF;
+	width: 248px;
+}
+
+.range-controls .toggle {
+	background: #ABABAB;
+	width: 4px;
+	height: 4px;
+	padding: 0;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	position: absolute;
+	top: 15px;
+	cursor: pointer;
+}
+
+.range-controls .toggle-max {
+	left: 248px;
+}
+
+.submit-cost {
+	color: #FFFFFF;
+	background-color: rgba(135, 206, 235, 0.0);
+	border: 2px solid #FFFFFF;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 5px 35px;
+	font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.submit-cost:hover {
+	background: #FFFFFF;
+    color: #000000;
 }
 
 .found-hotels {
@@ -564,16 +598,33 @@ form .label-appointment {
 	cursor: pointer;
 }
 
-.button-sorting svg:hover {
-	background-color: #000000;
+.button-up {
+	width: 11px;
+	height: 10px;
+	margin-right: 12px;
+	background-image: url(../img/icon-up.svg);
 }
 
-.button-sorting svg:active {
-	background-color: #81B3D2;
+.button-up:hover {
+	background-image: url(../img/icon-up-hover.svg);
 }
 
-.button-sorting svg:visited {
-	background-color: #81B3D2;
+.button-up:active {
+	background-image: url(../img/icon-up-active.svg);
+}
+
+.button-down {
+	width: 11px;
+	height: 10px;
+	background-image: url(../img/icon-down.svg);
+}
+
+.button-down:hover {
+	background-image: url(../img/icon-down-hover.svg);
+}
+
+.button-down:active {
+	background-image: url(../img/icon-down-active.svg);
 }
 
 .title-motel {
@@ -663,9 +714,12 @@ form .label-appointment {
 	margin: 0 auto;
 	padding: 0;
 	width: 1200px;
+}
+
+.index-footer {
 	position: absolute;
 	background: rgba(255, 255, 255, 0.9);
-	left: 168px;
+	left: 192px;
 	bottom: 5px;
 }
 
