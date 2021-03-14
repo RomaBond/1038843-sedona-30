@@ -497,6 +497,10 @@ form .label-appointment {
 	cursor: pointer;
 }
 
+.range-controls .toggle:hover {
+	border-width: 9px;
+}
+
 .range-controls .toggle-max {
 	left: 248px;
 }
@@ -531,9 +535,7 @@ form .label-appointment {
     font-weight: 400;
 }
 
-.button-by-price,
-.button-by-type,
-.button-by-rating {
+.button-by-choice {
 	font-size: 12px;
     line-height: 18px;
     border: none;
@@ -544,61 +546,22 @@ form .label-appointment {
     cursor: pointer;
 }
 
-.button-by-price:hover {
+.button-by-choice:hover {
 	color: #81B3D2;
 	opacity: 1.0;
 }
 
-.button-by-price:active {
+.button-by-choice:active {
 	color: #000000;
 	opacity: 1.0;
 }
 
-.button-by-price:visited {
-	color: #81B3D2;
-	opacity: 1.0;
-}
-
-.button-by-type:hover {
-	color: #81B3D2;
-	opacity: 1.0;
-}
-
-.button-by-type:active {
-	color: #000000;
-	opacity: 1.0;
-}
-
-.button-by-type:visited {
-	color: #81B3D2;
-	opacity: 1.0; 
-}
-
-.button-by-rating:hover {
-	color: #81B3D2;
-	opacity: 1.0;
-}
-
-.button-by-rating:active {
-	color: #000000;
-	opacity: 1.0;
-}
-
-.button-by-rating:visited {
-	color: #81B3D2;
-	opacity: 1.0;
-}
-
-.item-by-price,
-.item-by-type,
-.item-by-rating,
+.item-by-choice,
 .item-content-hotels {
 	list-style: none;
 }
 
-.item-by-price,
-.item-by-type,
-.item-by-rating {
+.item-by-choice {
 	border-bottom: 1px dashed #81B3D2;
 }
 
@@ -1060,9 +1023,6 @@ form .label-appointment {
 	margin-left: 35px;
 }
 
-.legend-comfort-type {
-}
-
 .block-choice {
 	margin-top: 20px;
 	margin-left: 30px;
@@ -1158,15 +1118,15 @@ form .label-appointment {
 }
 
 .span-amara {
-	margin-left: 44px;
+	margin-left: 27px;
 }
 
 .span-desert {
-	margin-left: 79px;
+	margin-left: 62px;
 }
 
 .span-villas {
-	margin-left: 34px;
+	margin-left: 17px;
 }
 
 .overall-rating {
