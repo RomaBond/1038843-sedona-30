@@ -428,7 +428,7 @@ form .label-appointment {
 	background-image: url("../img/shape-mode.svg");
 	background-repeat: no-repeat;
     background-position: 0 0;
-    background-size: 21px 16px;
+    background-size: 22px 17px;
 }
 
 .input-choice:active {
@@ -441,6 +441,16 @@ form .label-appointment {
 	font-size: 14px;
     line-height: 21px;
     font-weight: 400;
+}
+
+.group-cost::after {
+	content: "";
+	background: url(../img/middle-line.svg) no-repeat;
+	width: 2px;
+	height: 22px;
+	position: relative;
+	right: 158px;
+	top: 7px;
 }
 
 .minmax-cost {
@@ -495,7 +505,7 @@ form .label-appointment {
 	color: #FFFFFF;
 	background-color: rgba(135, 206, 235, 0.0);
 	border: 2px solid #FFFFFF;
-	border-radius: 5px;
+	border-radius: 2px;
 	cursor: pointer;
 	padding: 5px 35px;
 	font-family: inherit;
@@ -682,12 +692,26 @@ form .label-appointment {
 	opacity: 0.3;
 }
 
+.four-stars {
+	margin-right: 25px;
+}
+
+.three-stars {
+	margin-right: 15px;
+}
+
+.two-stars {
+	margin-right: 2px;
+}
+
 .rating-motel {
 	color: #666666;
 	font-size: 14px;
     line-height: 21px;
     background: #F2F2F2;
     font-weight: 400;
+    padding: 3px 14px;
+    margin-right: 27px;
 }
 
 .hidden {
@@ -719,8 +743,9 @@ form .label-appointment {
 .index-footer {
 	position: absolute;
 	background: rgba(255, 255, 255, 0.9);
-	left: 192px;
 	bottom: 5px;
+	left: 0;
+	right: 0;
 }
 
 .footer-contacts {
@@ -771,7 +796,6 @@ form .label-appointment {
 .list-hotels {
 	display: grid;
 	grid-template-columns: 1fr;
-	/*outline: 2px solid #00FF00;*/
 	margin: 0;
 	padding: 0;
 }
@@ -1028,11 +1052,15 @@ form .label-appointment {
 .fieldset-comfort-type {
 	display: flex;
 	flex-direction: column;
-	margin: auto;
+	margin-left: 65px;
+	margin-top: 20px;
+}
+
+.fieldset-house {
+	margin-left: 35px;
 }
 
 .legend-comfort-type {
-	margin-left: 0;
 }
 
 .block-choice {
@@ -1101,28 +1129,44 @@ form .label-appointment {
 	padding-right: 73px;
 }
 
+.description-hotels {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
 .picture-motel {
 	margin: auto;
 	margin-right: 0;
 }
 
 .title-motel {
-	margin-top: 10px;
+	margin: 0;
 	margin-left: 25px;
+	padding: 0;
 }
 
 .paragraph-house {
-	margin-top: 0;
+	margin-top: 5px;
 	margin-left: 25px;
+	padding: 0;
 }
 
 .block-button {
-	margin-bottom: 20px;
+	margin: 0;
+	padding: 0;
 	margin-left: 25px;
 }
 
-.span-min-cost {
-	margin-left: 40px;
+.span-amara {
+	margin-left: 44px;
+}
+
+.span-desert {
+	margin-left: 79px;
+}
+
+.span-villas {
+	margin-left: 34px;
 }
 
 .overall-rating {
@@ -1130,10 +1174,6 @@ form .label-appointment {
 	flex-direction: column;
 	align-items: flex-end;
 	justify-content: space-around;
-	margin-right: 72px;
+	margin-right: 45px;
 	/*outline: 2px solid #00FF00;*/
-}
-
-.picture-stars {
-	padding-right: 0;
 }
