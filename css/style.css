@@ -29,7 +29,7 @@
 }
 
 body {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	font-family: "PT Sans", "Arial", "sans-serif";
 	font-size: 21px;
@@ -38,6 +38,8 @@ body {
 	text-transform: uppercase;
 	background-color: white;
 	position: relative;
+	width: 1200px;
+	box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 a {
@@ -74,14 +76,24 @@ a {
     opacity: 0.3;
 }
 
+.item-once {
+	position: relative;
+    right: 34px;
+}
+
 .item-second {
 	position: relative;
-	right: 70px;
+	right: 111px;
 }
 
 .item-third {
 	position: relative;
-	left: 60px;
+	left: 97px;
+}
+
+.item-fourth {
+	position: relative;
+	left: 33px;
 }
 
 .number-features h3 {
@@ -92,8 +104,12 @@ a {
 
 .about-sedona h3 {
 	padding: 0;
-	width: 45%;
+	width: 460px;
 	text-align: center;
+	font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 30px;
 }
 
 .about-sedona p {
@@ -103,9 +119,42 @@ a {
     padding: 0;
 }
 
+.feature-block h3{
+	font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin-top: 46px;
+    width: 50%;
+}
+
+.feature-block span {
+	font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    padding: 0;
+    margin-top: 6px;
+}
+
+.feature-block p {
+	font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    text-align: center;
+    width: 297px;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.feature-block {
+	background-color: #81B3D2;
+	color: white;
+}
+
 .features {
 	padding-top: 60px;
-	padding-bottom: 80px;
+	padding-bottom: 68px;
 }
 
 .features-list,
@@ -113,10 +162,28 @@ a {
 	list-style: none;
 }
 
+.feature-item .icon-present {
+	
+}
+
 .feature-item h3 {
 	font-size: 21px;
     line-height: 21px;
     font-weight: bold;
+    margin-top: 25px;
+    padding: 0;
+}
+
+.feature-item .title-house {
+	margin-right: 3px;
+}
+
+.feature-item .title-food {
+	margin-right: 2px;
+}
+
+.feature-item .title-presents {
+	margin-right: 1px;
 }
 
 .feature-item p {
@@ -126,44 +193,29 @@ a {
     padding: 0;
     width: 70%;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5px;
+
 }
 
-.feature-block h3{
-	font-size: 21px;
-    line-height: 21px;
-    font-weight: bold;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    width: 50%;
+.feature-item .paragraph-housing {
+	margin-right: 1px;
+}
+
+.feature-item .paragraph-food {
+	margin-right: 1px;
+	width: 300px;
+	padding: 0;
 }
 
 .feature-block .evel-bridge {
+	margin-top: 49px;
 	width: 50%;
 }
 
-.feature-block span {
-	font-size: 14px;
-    line-height: 21px;
-    font-weight: normal;
-    padding: 0;
-    margin-top: 20px;
-}
-
-.feature-block p {
-	font-size: 14px;
-    line-height: 21px;
-    font-weight: normal;
-    text-align: center;
-    width: 110%;
-    padding: 0;
-    margin-top: 20px;
-}
-
-.feature-block {
-	background-color: #81B3D2;
-	color: white;
+.feature-block .paragraph-evel-bridge {
+	width: 305px;
+	padding: 0;
+	margin-top: 23px;
 }
 
 .next-list {
@@ -177,39 +229,54 @@ a {
     margin-top: 0;
     width: 40%;
     text-align: center;
+    padding-right: 2px;
 }
 
 .next-item span {
 	font-size: 14px;
     line-height: 21px;
     font-weight: normal;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 9px;
+    margin-right: 1px;
 }
 
 .next-item p {
 	font-size: 14px;
     line-height: 21px;
     font-weight: normal;
-    margin-top: 10px;
-    width: 70%;
+    width: 60%;
     text-align: center;
+    margin-right: 2px;
+}
+
+.next-item .next-paragraph-four {
+	width: 258px;
+}
+
+.next-item .next-title-five {
+	width: 98px;
+}
+
+.next-item .next-paragraph-five {
+	width: 246px;
 }
 
 .invitation h3 {
 	font-size: 30px;
     line-height: 24px;
     font-weight: bold;
+    margin-right: 12px;
 }
 
 .invitation p {
 	font-size: 14px;
     line-height: 24px;
     font-weight: 400;
-    width: 35%;
+    width: 460px;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin-top: 2px;
+    margin-bottom: 45px;
 }
 
 .appointment .hotel-search {
@@ -246,9 +313,14 @@ form .label-appointment {
 	border: none;
 	background-color: #81B3D2;
 	color: white;
-	padding: 16px 203px;
-	margin: 55px;
+	padding: 16px 199px;
+	width: 458px;
+	margin: 54px 49px 54px 55px;
 	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
 }
 
 .submit-search:hover {
@@ -294,7 +366,6 @@ form .label-appointment {
 	width: 21px;
 	height: 23px;
 	position: relative;
-	
 }
 
 .input-active:hover {
@@ -351,6 +422,8 @@ form .label-appointment {
 .developed-button {
 	width: 115px;
 	height: 41px;
+	margin-right: 74px;
+	margin-bottom: 5px;
 }
 
 .logo-footer {
@@ -375,12 +448,12 @@ form .label-appointment {
 
 
 
-.link-navigation-active {
+.site-navigation .link-navigation-active {
 	color: #766357;
 }
 
 .form-choice {
-	background: rgba(135, 206, 235) url("../img/background.png") no-repeat;
+	background: rgb(135, 206, 235) url("../img/background.png") no-repeat;
 	color: #FFFFFF;
 }
 
@@ -393,6 +466,10 @@ form .label-appointment {
 	cursor: pointer;
 }
 
+.fieldset-comfort-type legend {
+	padding-top: 5px;
+}
+
 .legend-comfort-type,
 .legend-cost {
 	font-size: 16px;
@@ -401,6 +478,15 @@ form .label-appointment {
 
 .label-choice {
 	position: relative;
+	cursor: pointer;
+}
+
+.fieldset-comfort-type:first-child label {
+	padding-left: 5px;
+}
+
+.fieldset-house .label-choice {
+	padding-left: 7px;
 }
 
 .input-choice {
@@ -411,11 +497,12 @@ form .label-appointment {
 .input-choice + label::before {
 	content: "";
 	position: absolute;
-	left: -40px;
-	width: 23px;
-	height: 23px;
+	left: -36px;
+	top: -1px;
+	width: 18px;
+	height: 19px;
 	border: 2px solid white;
-	border-radius: 5px;
+	border-radius: 2px;
 }
 
 .input-choice:checked + label::after {
@@ -423,12 +510,11 @@ form .label-appointment {
 	position: absolute;
 	left: -36px;
 	top: -1px;
-	width: 18px;
-	height: 18px;
-	background-image: url("../img/shape-mode.svg");
-	background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 22px 17px;
+	width: 27px;
+	height: 23px;
+	background: url("../img/checkbox-on.svg") no-repeat;
+    background-size: 27px 23px;
+    border-bottom: none;
 }
 
 .input-choice:active {
@@ -449,8 +535,8 @@ form .label-appointment {
 	width: 2px;
 	height: 22px;
 	position: relative;
-	right: 158px;
-	top: 7px;
+	right: 155px;
+	top: 5px;
 }
 
 .minmax-cost {
@@ -459,8 +545,9 @@ form .label-appointment {
 	border: none;
 	text-align: center;
 	text-transform: uppercase;
-	padding-top: 7px;
+	padding-top: 4px;
 	padding-bottom: 7px;
+	padding-left: 0;
 }
 
 .minmax-cost::placeholder {
@@ -468,7 +555,7 @@ form .label-appointment {
 }
 
 .range-controls {
-	padding-top: 25px;
+	padding-top: 20px;
 	padding-bottom: 15px;
 	position: relative;
 }
@@ -482,7 +569,7 @@ form .label-appointment {
 .range-controls .bar {
 	height: 2px;
 	background: #FFFFFF;
-	width: 248px;
+	width: 255px;
 }
 
 .range-controls .toggle {
@@ -493,8 +580,9 @@ form .label-appointment {
 	border: 8px solid #ffffff;
 	border-radius: 50%;
 	position: absolute;
-	top: 15px;
+	top: 10px;
 	cursor: pointer;
+	box-shadow: 0 2px 0 0 #ABABAB;
 }
 
 .range-controls .toggle:hover {
@@ -502,7 +590,7 @@ form .label-appointment {
 }
 
 .range-controls .toggle-max {
-	left: 248px;
+	left: 253px;
 }
 
 .submit-cost {
@@ -512,6 +600,8 @@ form .label-appointment {
 	border-radius: 2px;
 	cursor: pointer;
 	padding: 5px 35px;
+	margin-top: 19px;
+	margin-right: 10px;
 	font-family: inherit;
     font-weight: 400;
     font-size: 14px;
@@ -539,6 +629,7 @@ form .label-appointment {
 	font-size: 12px;
     line-height: 18px;
     border: none;
+    border-bottom: 1px dashed #81B3D2;
     text-transform: uppercase;
     background: #FFFFFF;
     color: #000000;
@@ -561,10 +652,6 @@ form .label-appointment {
 	list-style: none;
 }
 
-.item-by-choice {
-	border-bottom: 1px dashed #81B3D2;
-}
-
 .button-sorting {
 	border: none;
 	background-color: #FFFFFF;
@@ -575,7 +662,7 @@ form .label-appointment {
 	width: 11px;
 	height: 10px;
 	margin-right: 12px;
-	background-image: url(../img/icon-up.svg);
+	background: url(../img/icon-up.svg) no-repeat center;
 }
 
 .button-up:hover {
@@ -589,7 +676,7 @@ form .label-appointment {
 .button-down {
 	width: 11px;
 	height: 10px;
-	background-image: url(../img/icon-down.svg);
+	background: url(../img/icon-down.svg) no-repeat center;
 }
 
 .button-down:hover {
@@ -626,7 +713,7 @@ form .label-appointment {
 	color: #FFFFFF;
 	font-size: 14px;
     line-height: 21px;
-    padding: 3px 17px;
+    padding: 4px 17px;
 }
 
 .link-detailed:hover {
@@ -643,7 +730,7 @@ form .label-appointment {
 	color: #FFFFFF;
 	font-size: 14px;
     line-height: 21px;
-    padding: 3px 17px;
+    padding: 4px 17px;
 }
 
 .link-to-book:hover {
@@ -656,15 +743,18 @@ form .label-appointment {
 }
 
 .four-stars {
-	margin-right: 25px;
+	margin-right: 26px;
+	margin-top: 13px;
 }
 
 .three-stars {
 	margin-right: 15px;
+	margin-top: 13px;
 }
 
 .two-stars {
 	margin-right: 2px;
+	margin-top: 13px;
 }
 
 .rating-motel {
@@ -687,6 +777,11 @@ form .label-appointment {
 
 
 
+.main-header {
+	width: 1200px;
+	margin: 0 auto;
+}
+
 .container {
 	display: grid;
 	grid-template-columns: 100%;
@@ -697,10 +792,10 @@ form .label-appointment {
 
 .main-footer {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 400px 400px 400px;
 	margin: 0 auto;
-	padding: 0;
 	width: 1200px;
+	min-height: 120px;
 }
 
 .index-footer {
@@ -711,19 +806,23 @@ form .label-appointment {
 	right: 0;
 }
 
-.footer-contacts {
+/*.footer-contacts {
 	display: grid;
 	grid-template-columns: 1fr;
-	margin: 0 auto;
-	padding: 0;
-}
+}*/
 
 .footer-contacts p {
 	text-align: center;
+	margin-left: 152px;
+	margin-top: 22px;
+	margin-bottom: 10px;
+	width: 166px;
+	min-height: 26px;
 }
 
-.contacts a {
-	margin-bottom: 8px;
+.footer-contacts a {
+	width: 250px;
+	margin-left: 125px;
 }
 
 .footer-social {
@@ -807,8 +906,8 @@ form .label-appointment {
 	background: #81B3D2 url("../img/background-photo.png") no-repeat;
 	background-position: center;
 	background-size: cover;
-	padding-top: 75px;
-	padding-bottom: 75px;
+	padding-top: 78px;
+	padding-bottom: 81px;
 }
 
 .shape-svg {
@@ -820,8 +919,8 @@ form .label-appointment {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-bottom: 40px;
-	padding-top: 30px;
+	padding-bottom: 38px;
+	padding-top: 20px;
 }
 
 .reasons-media {
@@ -832,9 +931,10 @@ form .label-appointment {
 .feature-block {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: flex-start;
 	align-items: center;
-	padding: 45px 52px;
+	width: 400px;
+	
 }
 
 .features-list {
@@ -847,6 +947,9 @@ form .label-appointment {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
+	margin: 0 auto;
+	width: 422px;
 }
 
 .next-features {
@@ -865,16 +968,17 @@ form .label-appointment {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 47px;
+	margin-bottom: 41px;
 	padding: 0;
+	width: 400px;
 }
 
 .invitation {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 40px;
+	padding-top: 26px;
 }
 
 .appointment {
@@ -885,7 +989,7 @@ form .label-appointment {
 }
 
 .appointment .hotel-search {
-	padding: 30px 133px;
+	padding: 30px 140px;
 	border: none;
 }
 
@@ -903,7 +1007,7 @@ form .label-appointment {
 }
 
 .appointment-item:nth-child(1) {
-	margin: 55px 55px 30px 55px;
+	margin: 55px 53px 30px 55px;
 	padding-right: 0;
 }
 
@@ -919,12 +1023,12 @@ form .label-appointment {
 
 .appointment-item:nth-child(1) label {
 	padding: 0;
-	margin-right: 15px;
+	margin-right: 18px;
 }
 
 .appointment-item:nth-child(2) label {
 	padding: 0;
-	margin-right: 12px;
+	margin-right: 15px;
 }
 
 .appointment-item:nth-child(1) input {
@@ -942,7 +1046,11 @@ form .label-appointment {
 }
 
 .block-people label {
-	margin-right: 30px;
+	margin-right: 40px;
+}
+
+.block-people:nth-child(2) label {
+	margin-right: 25px;
 }
 
 .block-people {
@@ -954,7 +1062,7 @@ form .label-appointment {
 .button-plus,
 .button-minus {
 	height: 38px;
-	width: 38px;
+	width: 37px;
 	cursor: pointer;
 }
 
@@ -979,6 +1087,7 @@ form .label-appointment {
 	align-items: center;
 	list-style: none;
 	margin: 0;
+	margin-right: 2px;
 	padding: 0;
 }
 
@@ -986,7 +1095,7 @@ form .label-appointment {
 	width: 46px;
 	height: 48px;
 	background-color: #81B3D2;
-	margin: 6px;
+	margin: 3px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -998,12 +1107,9 @@ form .label-appointment {
 	align-items: center;
 }
 
-.developed-button {
-	margin: 0;
-}
-
 .website-by {
 	margin-right: 8px;
+	
 }
 
 
@@ -1015,17 +1121,21 @@ form .label-appointment {
 .fieldset-comfort-type {
 	display: flex;
 	flex-direction: column;
-	margin-left: 65px;
+	margin-left: 57px;
 	margin-top: 20px;
 }
 
 .fieldset-house {
-	margin-left: 35px;
+	margin-left: 12px;
 }
 
 .block-choice {
 	margin-top: 20px;
-	margin-left: 30px;
+	margin-left: 35px;
+}
+
+.fieldset-comfort-type .block-add-choice{
+	margin-top: 15px;
 }
 
 .fieldset-cost {
@@ -1039,23 +1149,19 @@ form .label-appointment {
 }
 
 .legend-cost {
-	padding-top: 20px;
+	padding-top: 25px;
 }
 
 .group-cost {
 	border: 2px solid #FFFFFF;
     border-radius: 2px;
-	margin-top: 10px;
+	margin-top: 12px;
 	display: flex;
 	position: relative;
 }
 
 .range-cost {
 	margin-top: 15px;
-}
-
-.submit-cost {
-	margin-top: 20px;
 }
 
 .found-hotels {
@@ -1069,7 +1175,8 @@ form .label-appointment {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	margin-left: 25px;
+	margin-left: 28px;
+	margin-bottom: 7px;
 }
 
 .sorting-list {
@@ -1077,8 +1184,8 @@ form .label-appointment {
 	flex-direction: row;
 	justify-content: space-around;
 	padding: 0;
-	margin-left: 50px;
-	margin-top: 30px;
+	margin-left: 30px;
+	margin-top: 25px;
 }
 
 .buttons-offset {
@@ -1086,39 +1193,40 @@ form .label-appointment {
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-end;
-	padding-right: 73px;
+	padding-right: 72px;
+	margin-top: 4px;
 }
 
 .description-hotels {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding: 0
 }
 
 .picture-motel {
-	margin: auto;
-	margin-right: 0;
+	margin: 30px 0 30px auto;
 }
 
 .title-motel {
-	margin: 0;
-	margin-left: 25px;
+	margin-top: 23px;
+	margin-bottom: 5px;
+	margin-left: 30px;
 	padding: 0;
 }
 
 .paragraph-house {
-	margin-top: 5px;
-	margin-left: 25px;
+	margin-top: 7px;
+	margin-left: 30px;
 	padding: 0;
 }
 
 .block-button {
 	margin: 0;
+	margin-top: 2px;
 	padding: 0;
-	margin-left: 25px;
+	margin-left: 29px;
 }
 
 .span-amara {
-	margin-left: 27px;
+	margin-left: 35px;
 }
 
 .span-desert {
